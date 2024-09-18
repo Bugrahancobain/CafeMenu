@@ -1,0 +1,55 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    height: 75px;
+    text-align: center;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.navlogo img{
+    height: 80px;
+}
+
+.navLink{
+    display: flex;
+    
+}
+.navLink a {
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+.navLink a:active{
+    color: white;
+    text-decoration: none;
+}
+
+.navsocialbtn{
+    background-color: orange;
+}
+
+.navsocial{
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.faInstagram{
+    font-size: 20px;
+}
+@media (max-width: 767px){
+.followInstagram{
+    display: none;
+}
+.navsocialbtn{
+    width: 60px;
+    height: 40px;
+    text-align: center;
+}
+
+}

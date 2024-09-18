@@ -1,0 +1,35 @@
+.Footer{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+}
+
+.workHour{
+    text-align: start;
+}
+
+.workHour p{
+    margin: 0;
+    text-align: start;
+}
+
+.footerLogo{
+    width: 110px;
+}
+.contactUs{
+    text-align: start;
+}
+.contactUsTitle{
+    color: orange;
+}
+
+@media (max-width: 1024px) {
+    .Footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        display: flex;
+    }
+}

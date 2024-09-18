@@ -1,0 +1,16 @@
+.ComponentA{
+    background-image: url("../assets/componentAImg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.goMenu{
+    background-color: orange;
+    margin-top: 100px;
+    
+}

@@ -1,0 +1,31 @@
+/* Slider container */
+.slider-container {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Slider wrapper: tüm slaytlar yan yana olacak */
+  .slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Geçiş efekti */
+    width: 100%; /* Hepsini yatay yerleştir */
+  }
+  
+  /* Her slayt ekranın tamamını kaplayacak */
+  .slide {
+    min-width: 100vw; /* Her bir slayt 100vw genişliğinde */
+    height: 100vh; /* İsteğe bağlı yükseklik */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    transition: all 0.5s ease;
+  }
+  
+  
+  
+  p {
+    color: #333;
+  }
+  

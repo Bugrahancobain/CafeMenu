@@ -1,0 +1,174 @@
+/* Genel stil ayarları */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 30px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Admin panel başlık */
+.admin-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 2em;
+}
+
+/* Form elemanları için stil */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Başlık ve etiketler */
+form h2 {
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Girdi alanları */
+input[type="text"],
+input[type="color"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 300px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Butonlar */
+button {
+  background-color: rgb(0, 123, 255);
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button.add-category {
+  background-color: #28a745;
+}
+
+button.add-product {
+  background-color: #007bff;
+}
+
+button.save-changes {
+  background-color: #17a2b8;
+}
+
+button.logout {
+  background-color: #dc3545;
+}
+
+button.go-home {
+  background-color: #007bff;
+}
+
+/* Butonlar arasındaki mesafeyi artırma */
+button + button {
+  margin-left: 10px;
+}
+
+/* Hata mesajları */
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Kategoriler ve ürünler listesi */
+.category-list,
+.product-list {
+  margin-top: 20px;
+}
+
+.category-item,
+.product-item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+
+.category-item:hover,
+.product-item:hover {
+  background: #f1f1f1;
+}
+
+/* Düzenleme formu */
+.edit-form {
+  margin-top: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.qr-code-section {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  background: #fff;
+}
+
+.qr-code-section h2 {
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.qr-code-section p {
+  margin-top: 10px;
+  color: #333;
+}
+
+.categoriesNameDiv {
+  border: 2px solid black;
+  width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 16px;
+  list-style-type: none;
+}
+.productNameDiv {
+  border: 2px solid black;
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 16px;
+  list-style-type: none;
+}
+
+li {
+  list-style-type: none;
+}
+ul {
+  padding-inline-start: 0px !important;
+}

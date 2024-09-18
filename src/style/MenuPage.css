@@ -1,0 +1,124 @@
+/* src/components/MenuPage.css */
+
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.established {
+  font-style: italic;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+.menu {
+  min-height: 100vh;
+  max-height: max-content;
+  align-items: center;
+  max-width: 100vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+h1,
+h2 {
+  font-family: Impact, serif;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 10px;
+  text-align: center;
+}
+
+.category-button {
+  flex: 1 1 calc(33.333% - 10px);
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.category-button.active {
+  background-color: black;
+  border-color: #aaa;
+}
+
+.price {
+  text-align: right;
+  width: 25%;
+}
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black; /* Arka plan siyah */
+  color: white; /* Yazı rengi beyaz */
+}
+
+.loading-logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.loading-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+  .category-button {
+    flex: 1 calc(100%);
+  }
+}

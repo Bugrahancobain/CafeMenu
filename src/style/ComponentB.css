@@ -1,0 +1,59 @@
+
+.ComponentB{
+    background-image: url("../assets/componentBImg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerDiv{
+    margin-left: 100px;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.headerDiv hr{
+    width: 30px;
+    margin: 10px;
+    color: orange;
+    background-color: orange;
+    border: none;
+}
+.header{
+    font-size: 24px;
+}
+
+.contextDiv h2{
+    color: white;
+    margin: 10px 0 0 100px;
+    font-size: 80px !important;
+    font-weight: 800;
+}
+
+@media (max-width: 767px) {
+    .headerDiv{
+            margin-left: 25px;
+        }
+        
+    .headerDiv hr{
+        width: 30px;
+        margin: 5px;
+    }
+    .header{
+        font-size: 12px;
+    }
+
+    .contextDiv h2{
+        margin: 5px 0 0 50px;
+        font-size: 40px !important;
+        font-weight: 400;
+    }
+}
