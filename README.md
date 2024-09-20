@@ -2,19 +2,19 @@
 Step 1: Project Setup
 Clone the repository:
 
- 
- 
-git clone https://github.com/Bugrahancobain/CafeMenu.git
+```git clone https://github.com/Bugrahancobain/CafeMenu.git```
+
 Install dependencies: Run the following command to install all necessary libraries:
 
- 
- 
-npm install
+
+```npm install```
+
 Start the development server:
 
  
  
-npm start
+```npm start```
+
 This command starts the development server, allowing you to preview the project in your browser.
 
 Step 2: Technologies Used
@@ -23,7 +23,7 @@ React: A JavaScript library for building user interfaces. React helps create reu
 Components: Components are reusable, isolated parts of the user interface. In this project, each menu section (like drinks, food, etc.) is a separate component, making it easier to manage and update.
 Example:
 
-jsx
+```jsx
  
 function MenuItem({ name, price }) {
   return (
@@ -33,6 +33,7 @@ function MenuItem({ name, price }) {
     </div>
   );
 }
+```
 This MenuItem component takes in name and price as props and displays them. It is used to list individual menu items.
 
 Firebase: Firebase is used for authentication and database storage. It allows café owners to log in securely and modify the menu stored in Firebase's NoSQL database (Firestore).
@@ -52,7 +53,7 @@ Key functionalities:
 Renders the header and main content.
 Manages the different routes of the application (e.g., home, admin panel).
 Loads data from Firebase Firestore to display the menu items.
-jsx
+```jsx
  
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -73,6 +74,7 @@ function App() {
 }
 
 export default App;
+```
 Explanation:
 
 Router and Switch: These are used to define different routes within the application. For example, / directs to the homepage (Home component), while /admin leads to the admin panel (Admin component).
@@ -82,7 +84,7 @@ Component Rendering: Depending on the route, the appropriate component is render
 2. Home.js
 This is the main page that the users see. It displays the café’s menu.
 
-jsx
+```jsx
  
 import React, { useEffect, useState } from 'react';
 import { db } from '../firebase';
@@ -111,6 +113,7 @@ function Home() {
 }
 
 export default Home;
+```
 Explanation:
 
 State Management: The menuItems state stores the list of menu items fetched from Firebase Firestore.
@@ -124,7 +127,7 @@ Rendering Menu Items: The menu items are then rendered using the MenuItem compon
 3. Admin.js
 This page is accessible only by café owners. It allows them to add, update, and remove items from the menu.
 
-jsx
+```jsx
  
 import React, { useState } from 'react';
 import { db } from '../firebase';
@@ -161,6 +164,7 @@ function Admin() {
 }
 
 export default Admin;
+```
 Explanation:
 
 State Management: The name and price states store the input values for the new menu item.
@@ -172,7 +176,7 @@ Form Inputs: The two input fields allow the café owner to enter the name and pr
 4. Firebase Configuration (firebase.js)
 This file is crucial for connecting the app to Firebase.
 
-javascript
+```javascript
  
 import firebase from 'firebase/app';
 import 'firebase/firestore';
@@ -191,6 +195,7 @@ firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 
 export { db };
+```
 Explanation:
 
 firebase.initializeApp: This initializes the Firebase app using the configuration object, which contains sensitive information like API keys and project IDs. This connects the project to the Firebase backend.
@@ -200,7 +205,7 @@ Firestore: The db constant provides access to Firebase Firestore, allowing the a
 Step 4: Key Components
 MenuItem Component: Displays a single menu item, including its name and price.
 
-jsx
+```jsx
  
 function MenuItem({ name, price }) {
   return (
@@ -210,6 +215,7 @@ function MenuItem({ name, price }) {
     </div>
   );
 }
+```
 This component is reused throughout the app to list menu items dynamically fetched from Firestore.
 
 Admin Page: The admin page allows café owners to manage their menu. It uses Firebase to store, update, and delete menu items.
